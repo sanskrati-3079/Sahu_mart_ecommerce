@@ -1,0 +1,40 @@
+import type { ColorOption } from '@/types'
+
+/** Shared colour palette used by product variants and colour-swatch filters. */
+export const COLORS = {
+  maroon: { name: 'Maroon', hex: '#7A1F2B' },
+  red: { name: 'Red', hex: '#B3242C' },
+  pink: { name: 'Pink', hex: '#D9819A' },
+  rani: { name: 'Rani Pink', hex: '#C2185B' },
+  peach: { name: 'Peach', hex: '#E8B49A' },
+  orange: { name: 'Orange', hex: '#D9732B' },
+  rust: { name: 'Rust', hex: '#A3492A' },
+  mustard: { name: 'Mustard', hex: '#C99A2E' },
+  yellow: { name: 'Yellow', hex: '#E5C33B' },
+  gold: { name: 'Gold-tone', hex: '#C5A46D' },
+  green: { name: 'Green', hex: '#2E7D4F' },
+  bottle: { name: 'Bottle Green', hex: '#1F4D3A' },
+  mint: { name: 'Mint', hex: '#A9D3B9' },
+  olive: { name: 'Olive', hex: '#6B6B3A' },
+  sage: { name: 'Sage', hex: '#9CAF94' },
+  teal: { name: 'Teal', hex: '#1E6E73' },
+  sky: { name: 'Sky Blue', hex: '#8DB8DE' },
+  blue: { name: 'Royal Blue', hex: '#2C4FA3' },
+  navy: { name: 'Navy', hex: '#1E2A4A' },
+  purple: { name: 'Purple', hex: '#5E3B7A' },
+  lavender: { name: 'Lavender', hex: '#B7A6D2' },
+  ivory: { name: 'Ivory', hex: '#F3EDDF' },
+  white: { name: 'White', hex: '#FFFFFF' },
+  beige: { name: 'Beige', hex: '#D8C7A8' },
+  khaki: { name: 'Khaki', hex: '#B39B72' },
+  tan: { name: 'Tan', hex: '#B07A4A' },
+  brown: { name: 'Brown', hex: '#6B4430' },
+  grey: { name: 'Grey', hex: '#8C8C8C' },
+  charcoal: { name: 'Charcoal', hex: '#3A3A3A' },
+  black: { name: 'Black', hex: '#1A1A1A' },
+  silver: { name: 'Silver-tone', hex: '#BFC3C7' },
+  oxidised: { name: 'Oxidised Silver', hex: '#6F7275' },
+  multi: { name: 'Multicolour', hex: 'conic-gradient(#B3242C, #E5C33B, #2E7D4F, #2C4FA3, #B3242C)' },
+} satisfies Record<string, ColorOption>
+
+export type ColorKey = keyof typeof COLORS
